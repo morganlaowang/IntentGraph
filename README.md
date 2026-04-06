@@ -6,6 +6,14 @@ IntentGraph is a minimal Blueprint/Graph framework for gameplay logic.
 
 The project is intentionally starting small. The near-term goal is not to build a giant visual scripting platform, but to establish an extensible core loop that can grow through real game development and UGC needs.
 
+## AI-Friendly Graph
+
+IntentGraph is not trying to become a traditional Blueprint system.
+
+It is better understood as an AI-friendly graph for gameplay logic: a structured, text-first, schema-driven representation that AI can read, generate, patch, validate, and extend with much higher reliability than a purely editor-centric workflow.
+
+At the current stage of AI tooling, this direction is meant to make game production faster and more practical. The goal is to help teams build gameplay logic more efficiently with AI, instead of recreating the full shape of older visual scripting tools.
+
 ## Vision
 
 IntentGraph focuses on a practical, text-first representation of gameplay logic:
@@ -44,6 +52,7 @@ That means:
 
 IntentGraph is intentionally not trying to do the following right now:
 
+- a traditional Blueprint clone
 - a GUI editor
 - a full UGC platform
 - a general-purpose scripting language
@@ -58,6 +67,8 @@ Many gameplay logic systems fail by becoming too broad too early. This project t
 - start from a minimal closed loop
 - prove it in one concrete gameplay category
 - expand only after real usage exposes the next missing piece
+
+It also reflects a different assumption: in this phase of AI development, the most useful gameplay graph is not necessarily the most visual one. It is the one that is easiest for humans and AI to co-author, inspect, patch, validate, and execute.
 
 The expectation is that a small, reliable core will be more useful than a large but vague framework.
 
